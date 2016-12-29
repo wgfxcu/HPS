@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g  $/;"	m
+CPP	Makefile	/^CPP = g++ -std=c++11$/;"	m
+CPP_SRC	Makefile	/^CPP_SRC = $(wildcard *.cpp)$/;"	m
+CPP_TAR	Makefile	/^CPP_TAR = $(patsubst %.cpp, %, $(CPP_SRC))$/;"	m
+C_SRC	Makefile	/^C_SRC = $(wildcard *.c)$/;"	m
+C_TAR	Makefile	/^C_TAR = $(patsubst %.c, %, $(C_SRC))$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -lpthread$/;"	m
+MAX_EVENT_NUMBER	10-1unievent.cpp	16;"	d	file:
+RM	Makefile	/^RM = rm -f $/;"	m
+addfd	10-1unievent.cpp	/^void addfd(int epollfd, int fd)$/;"	f
+addsig	10-1unievent.cpp	/^void addsig(int sig)$/;"	f
+main	10-1unievent.cpp	/^int main(int argc, char *argv[])$/;"	f
+pipefd	10-1unievent.cpp	/^static int pipefd[2];$/;"	v	file:
+setnonblocking	10-1unievent.cpp	/^int setnonblocking(int fd)$/;"	f
+sig_handler	10-1unievent.cpp	/^void sig_handler(int sig)$/;"	f

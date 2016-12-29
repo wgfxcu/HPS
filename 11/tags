@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	lst_timer.h	6;"	d
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g  $/;"	m
+CPP	Makefile	/^CPP = g++ -std=c++11$/;"	m
+CPP_SRC	Makefile	/^CPP_SRC = $(wildcard *.cpp)$/;"	m
+CPP_TAR	Makefile	/^CPP_TAR = $(patsubst %.cpp, %, $(CPP_SRC))$/;"	m
+C_SRC	Makefile	/^C_SRC = $(wildcard *.c)$/;"	m
+C_TAR	Makefile	/^C_TAR = $(patsubst %.c, %, $(C_SRC))$/;"	m
+FD_LIMIT	11-3nonactive_conn.cpp	18;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = -I. -lpthread$/;"	m
+MAX_EVENT_NUMBER	11-3nonactive_conn.cpp	19;"	d	file:
+RM	Makefile	/^RM = rm -f $/;"	m
+TIMESLOT	11-3nonactive_conn.cpp	20;"	d	file:
+_LST_TIMER_	lst_timer.h	2;"	d
+add_timer	lst_timer.h	/^    void add_timer(util_timer *timer)$/;"	f	class:sort_timer_lst
+add_timer	lst_timer.h	/^    void add_timer(util_timer *timer, util_timer *lst_head)$/;"	f	class:sort_timer_lst
+addfd	11-3nonactive_conn.cpp	/^void addfd(int epollfd, int fd)$/;"	f
+address	lst_timer.h	/^    sockaddr_in address;$/;"	m	struct:client_data
+addsig	11-3nonactive_conn.cpp	/^void addsig(int sig)$/;"	f
+adjust_timer	lst_timer.h	/^    void adjust_timer(util_timer *timer)$/;"	f	class:sort_timer_lst
+buf	lst_timer.h	/^    char buf[BUFFER_SIZE];$/;"	m	struct:client_data
+cb_func	11-3nonactive_conn.cpp	/^void cb_func(client_data *user_data)$/;"	f
+cb_func	lst_timer.h	/^    void (*cb_func)(client_data *);$/;"	m	class:util_timer
+client_data	lst_timer.h	/^struct client_data$/;"	s
+del_timer	lst_timer.h	/^    void del_timer(util_timer *timer)$/;"	f	class:sort_timer_lst
+epollfd	11-3nonactive_conn.cpp	/^static int epollfd = 0;$/;"	v	file:
+expire	lst_timer.h	/^    time_t expire;$/;"	m	class:util_timer
+head	lst_timer.h	/^    util_timer *head;$/;"	m	class:sort_timer_lst
+main	11-1connect_timeout.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	11-3nonactive_conn.cpp	/^int main(int argc, char *argv[])$/;"	f
+next	lst_timer.h	/^    util_timer *next;$/;"	m	class:util_timer
+pipefd	11-3nonactive_conn.cpp	/^static int pipefd[2];$/;"	v	file:
+prev	lst_timer.h	/^    util_timer *prev;$/;"	m	class:util_timer
+setnonblocking	11-3nonactive_conn.cpp	/^int setnonblocking(int fd)$/;"	f
+sig_handler	11-3nonactive_conn.cpp	/^void sig_handler(int sig)$/;"	f
+sockfd	lst_timer.h	/^    int sockfd;$/;"	m	struct:client_data
+sort_timer_lst	lst_timer.h	/^    sort_timer_lst() : head(NULL), tail(NULL) {}$/;"	f	class:sort_timer_lst
+sort_timer_lst	lst_timer.h	/^class sort_timer_lst$/;"	c
+tail	lst_timer.h	/^    util_timer *tail;$/;"	m	class:sort_timer_lst
+tick	lst_timer.h	/^    void tick()$/;"	f	class:sort_timer_lst
+timeout_connect	11-1connect_timeout.cpp	/^int timeout_connect(const char *ip, int port, int time)$/;"	f
+timer	lst_timer.h	/^    util_timer *timer;$/;"	m	struct:client_data
+timer_handler	11-3nonactive_conn.cpp	/^void timer_handler()$/;"	f
+timer_lst	11-3nonactive_conn.cpp	/^static sort_timer_lst timer_lst;$/;"	v	file:
+user_data	lst_timer.h	/^    client_data *user_data;$/;"	m	class:util_timer
+util_timer	lst_timer.h	/^    util_timer() : prev(NULL), next(NULL){}$/;"	f	class:util_timer
+util_timer	lst_timer.h	/^class util_timer$/;"	c
+~sort_timer_lst	lst_timer.h	/^    ~sort_timer_lst()$/;"	f	class:sort_timer_lst

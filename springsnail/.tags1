@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+m_epollfd	X:\springsnail\mgr.cpp	/^int mgr::m_epollfd = -1;$/;"	member	line:23	class:mgr	file:
+conn2srv	X:\springsnail\mgr.cpp	/^int mgr::conn2srv( const sockaddr_in& address )$/;"	function	line:24	class:mgr	signature:( const sockaddr_in& address )
+mgr	X:\springsnail\mgr.cpp	/^mgr::mgr( int epollfd, const host& srv ) : m_logic_srv( srv )$/;"	function	line:40	class:mgr	signature:( int epollfd, const host& srv )
+~mgr	X:\springsnail\mgr.cpp	/^mgr::~mgr()$/;"	function	line:78	class:mgr	signature:()
+get_used_conn_cnt	X:\springsnail\mgr.cpp	/^int mgr::get_used_conn_cnt()$/;"	function	line:82	class:mgr	signature:()
+pick_conn	X:\springsnail\mgr.cpp	/^conn* mgr::pick_conn( int cltfd  )$/;"	function	line:87	class:mgr	signature:( int cltfd )
+free_conn	X:\springsnail\mgr.cpp	/^void mgr::free_conn( conn* connection )$/;"	function	line:112	class:mgr	signature:( conn* connection )
+recycle_conns	X:\springsnail\mgr.cpp	/^void mgr::recycle_conns()$/;"	function	line:124	class:mgr	signature:()
+process	X:\springsnail\mgr.cpp	/^RET_CODE mgr::process( int fd, OP_TYPE type )$/;"	function	line:150	class:mgr	signature:( int fd, OP_TYPE type )

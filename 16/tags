@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g  $/;"	m
+CPP	Makefile	/^CPP = g++ -std=c++11$/;"	m
+CPP_SRC	Makefile	/^CPP_SRC = $(wildcard *.cpp)$/;"	m
+CPP_TAR	Makefile	/^CPP_TAR = $(patsubst %.cpp, %, $(CPP_SRC))$/;"	m
+C_SRC	Makefile	/^C_SRC = $(wildcard *.c)$/;"	m
+C_TAR	Makefile	/^C_TAR = $(patsubst %.c, %, $(C_SRC))$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -lpthread$/;"	m
+RM	Makefile	/^RM = rm -f $/;"	m
+addfd	16-4stress_client.cpp	/^void addfd(int epoll_fd, int fd)$/;"	f
+close_conn	16-4stress_client.cpp	/^void close_conn(int epoll_fd, int sockfd)$/;"	f
+main	16-4stress_client.cpp	/^int main(int argc, char *argv[])$/;"	f
+read_once	16-4stress_client.cpp	/^bool read_once(int sockfd, char *buffer, int len)$/;"	f
+request	16-4stress_client.cpp	/^static const char *request = "GET http:\/\/localhost\/index.html HTTP\/1.1\\r\\$/;"	v	file:
+setnonblokcing	16-4stress_client.cpp	/^int setnonblokcing(int fd)$/;"	f
+start_conn	16-4stress_client.cpp	/^void start_conn(int epoll_fd, int num, const char *ip, int port)$/;"	f
+write_nbytes	16-4stress_client.cpp	/^bool write_nbytes(int sockfd, const char *buffer, int len)$/;"	f

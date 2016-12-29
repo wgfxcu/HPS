@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BAD_REQUEST	8-3httpparser.cpp	/^    BAD_REQUEST,$/;"	e	enum:HTTP_CODE	file:
+BUFFER_SIZE	8-3httpparser.cpp	13;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g $/;"	m
+CHECK_STATE	8-3httpparser.cpp	/^enum CHECK_STATE{$/;"	g	file:
+CHECK_STATE_HEADER	8-3httpparser.cpp	/^    CHECK_STATE_HEADER$/;"	e	enum:CHECK_STATE	file:
+CHECK_STATE_REQUESTLINE	8-3httpparser.cpp	/^    CHECK_STATE_REQUESTLINE = 0,$/;"	e	enum:CHECK_STATE	file:
+CLOSED_CONNECTION	8-3httpparser.cpp	/^    CLOSED_CONNECTION$/;"	e	enum:HTTP_CODE	file:
+CPP	Makefile	/^CPP = g++ -std=c++11$/;"	m
+CPP_SRC	Makefile	/^CPP_SRC = $(wildcard *.cpp)$/;"	m
+CPP_TAR	Makefile	/^CPP_TAR = $(patsubst %.cpp, %, $(CPP_SRC))$/;"	m
+C_SRC	Makefile	/^C_SRC = $(wildcard *.c)$/;"	m
+C_TAR	Makefile	/^C_TAR = $(patsubst %.c, %, $(C_SRC))$/;"	m
+FORBIDDEN_REQUEST	8-3httpparser.cpp	/^    FORBIDDEN_REQUEST,$/;"	e	enum:HTTP_CODE	file:
+GET_REQUEST	8-3httpparser.cpp	/^    GET_REQUEST,$/;"	e	enum:HTTP_CODE	file:
+HTTP_CODE	8-3httpparser.cpp	/^enum HTTP_CODE{$/;"	g	file:
+INTERNAL_ERROR	8-3httpparser.cpp	/^    INTERNAL_ERROR,$/;"	e	enum:HTTP_CODE	file:
+LINE_BAD	8-3httpparser.cpp	/^    LINE_BAD,$/;"	e	enum:LINE_STATUS	file:
+LINE_OK	8-3httpparser.cpp	/^    LINE_OK = 0,$/;"	e	enum:LINE_STATUS	file:
+LINE_OPEN	8-3httpparser.cpp	/^    LINE_OPEN$/;"	e	enum:LINE_STATUS	file:
+LINE_STATUS	8-3httpparser.cpp	/^enum LINE_STATUS{$/;"	g	file:
+NO_REQUEST	8-3httpparser.cpp	/^    NO_REQUEST,$/;"	e	enum:HTTP_CODE	file:
+RM	Makefile	/^RM = rm -f $/;"	m
+main	8-3httpparser.cpp	/^int main(int argc, char *argv[])$/;"	f
+parse_content	8-3httpparser.cpp	/^HTTP_CODE parse_content(char *buffer, int &checked_index, CHECK_STATE &checkstate,$/;"	f
+parse_headers	8-3httpparser.cpp	/^HTTP_CODE parse_headers(char *temp)$/;"	f
+parse_line	8-3httpparser.cpp	/^LINE_STATUS parse_line(char *buffer, int &checked_index, int &read_index)$/;"	f
+parse_requestline	8-3httpparser.cpp	/^HTTP_CODE parse_requestline(char *temp, CHECK_STATE &checkstate)$/;"	f
+szret	8-3httpparser.cpp	/^static const char *szret[] = {"I get a correct result\\n",$/;"	v	file:

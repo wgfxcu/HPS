@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FDWRAPPER_H	X:\springsnail\fdwrapper.cpp	/^#define FDWRAPPER_H$/;"	macro	line:2	file:
+setnonblocking	X:\springsnail\fdwrapper.cpp	/^int setnonblocking( int fd )$/;"	function	line:8	signature:( int fd )
+add_read_fd	X:\springsnail\fdwrapper.cpp	/^void add_read_fd( int epollfd, int fd )$/;"	function	line:16	signature:( int epollfd, int fd )
+add_write_fd	X:\springsnail\fdwrapper.cpp	/^void add_write_fd( int epollfd, int fd )$/;"	function	line:25	signature:( int epollfd, int fd )
+closefd	X:\springsnail\fdwrapper.cpp	/^void closefd( int epollfd, int fd )$/;"	function	line:34	signature:( int epollfd, int fd )
+removefd	X:\springsnail\fdwrapper.cpp	/^void removefd( int epollfd, int fd )$/;"	function	line:40	signature:( int epollfd, int fd )
+modfd	X:\springsnail\fdwrapper.cpp	/^void modfd( int epollfd, int fd, int ev )$/;"	function	line:45	signature:( int epollfd, int fd, int ev )
+level	X:\springsnail\log.cpp	/^static int level = LOG_INFO;$/;"	variable	line:6	file:
+LOG_BUFFER_SIZE	X:\springsnail\log.cpp	/^static int LOG_BUFFER_SIZE = 2048;$/;"	variable	line:7	file:
+loglevels	X:\springsnail\log.cpp	/^static const char* loglevels[] =$/;"	variable	line:8	file:
+set_loglevel	X:\springsnail\log.cpp	/^void set_loglevel( int log_level )$/;"	function	line:13	signature:( int log_level )
+log	X:\springsnail\log.cpp	/^void log( int log_level,  const char* file_name, int line_num, const char* format, ... )$/;"	function	line:18	signature:( int log_level, const char* file_name, int line_num, const char* format, ... )
+version	X:\springsnail\main.cpp	/^static const char* version = "1.0";$/;"	variable	line:25	file:
+usage	X:\springsnail\main.cpp	/^static void usage( const char* prog )$/;"	function	line:27	file:	signature:( const char* prog )
+main	X:\springsnail\main.cpp	/^int main( int argc, char* argv[] )$/;"	function	line:32	signature:( int argc, char* argv[] )
+conn	X:\springsnail\conn.cpp	/^conn::conn()$/;"	function	line:8	class:conn	signature:()
+~conn	X:\springsnail\conn.cpp	/^conn::~conn()$/;"	function	line:24	class:conn	signature:()
+init_clt	X:\springsnail\conn.cpp	/^void conn::init_clt( int sockfd, const sockaddr_in& client_addr )$/;"	function	line:30	class:conn	signature:( int sockfd, const sockaddr_in& client_addr )
+init_srv	X:\springsnail\conn.cpp	/^void conn::init_srv( int sockfd, const sockaddr_in& server_addr )$/;"	function	line:36	class:conn	signature:( int sockfd, const sockaddr_in& server_addr )
+reset	X:\springsnail\conn.cpp	/^void conn::reset()$/;"	function	line:42	class:conn	signature:()
+read_clt	X:\springsnail\conn.cpp	/^RET_CODE conn::read_clt()$/;"	function	line:54	class:conn	signature:()
+read_srv	X:\springsnail\conn.cpp	/^RET_CODE conn::read_srv()$/;"	function	line:84	class:conn	signature:()
+write_srv	X:\springsnail\conn.cpp	/^RET_CODE conn::write_srv()$/;"	function	line:115	class:conn	signature:()
+write_clt	X:\springsnail\conn.cpp	/^RET_CODE conn::write_clt()$/;"	function	line:146	class:conn	signature:()
+m_epollfd	X:\springsnail\mgr.cpp	/^int mgr::m_epollfd = -1;$/;"	member	line:23	class:mgr	file:
+conn2srv	X:\springsnail\mgr.cpp	/^int mgr::conn2srv( const sockaddr_in& address )$/;"	function	line:24	class:mgr	signature:( const sockaddr_in& address )
+mgr	X:\springsnail\mgr.cpp	/^mgr::mgr( int epollfd, const host& srv ) : m_logic_srv( srv )$/;"	function	line:40	class:mgr	signature:( int epollfd, const host& srv )
+~mgr	X:\springsnail\mgr.cpp	/^mgr::~mgr()$/;"	function	line:78	class:mgr	signature:()
+get_used_conn_cnt	X:\springsnail\mgr.cpp	/^int mgr::get_used_conn_cnt()$/;"	function	line:82	class:mgr	signature:()
+pick_conn	X:\springsnail\mgr.cpp	/^conn* mgr::pick_conn( int cltfd  )$/;"	function	line:87	class:mgr	signature:( int cltfd )
+free_conn	X:\springsnail\mgr.cpp	/^void mgr::free_conn( conn* connection )$/;"	function	line:112	class:mgr	signature:( conn* connection )
+recycle_conns	X:\springsnail\mgr.cpp	/^void mgr::recycle_conns()$/;"	function	line:124	class:mgr	signature:()
+process	X:\springsnail\mgr.cpp	/^RET_CODE mgr::process( int fd, OP_TYPE type )$/;"	function	line:150	class:mgr	signature:( int fd, OP_TYPE type )
+SRVMGR_H	X:\springsnail\mgr.h	/^#define SRVMGR_H$/;"	macro	line:2
+host	X:\springsnail\mgr.h	/^class host$/;"	class	line:11
+m_hostname	X:\springsnail\mgr.h	/^    char m_hostname[1024];$/;"	member	line:14	class:host
+m_port	X:\springsnail\mgr.h	/^    int m_port;$/;"	member	line:15	class:host
+m_conncnt	X:\springsnail\mgr.h	/^    int m_conncnt;$/;"	member	line:16	class:host
+mgr	X:\springsnail\mgr.h	/^class mgr$/;"	class	line:19
+m_epollfd	X:\springsnail\mgr.h	/^    static int m_epollfd;$/;"	member	line:32	class:mgr
+m_conns	X:\springsnail\mgr.h	/^    map< int, conn* > m_conns;$/;"	member	line:33	class:mgr
+m_used	X:\springsnail\mgr.h	/^    map< int, conn* > m_used;$/;"	member	line:34	class:mgr
+m_freed	X:\springsnail\mgr.h	/^    map< int, conn* > m_freed;$/;"	member	line:35	class:mgr
+m_logic_srv	X:\springsnail\mgr.h	/^    host m_logic_srv;$/;"	member	line:36	class:mgr
+FDWRAPPER_H	X:\springsnail\fdwrapper.h	/^#define FDWRAPPER_H$/;"	macro	line:2
+RET_CODE	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enum	line:4
+OK	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+NOTHING	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+IOERR	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+CLOSED	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+BUFFER_FULL	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+BUFFER_EMPTY	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+TRY_AGAIN	X:\springsnail\fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	enumerator	line:4	enum:RET_CODE
+OP_TYPE	X:\springsnail\fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	enum	line:5
+READ	X:\springsnail\fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	enumerator	line:5	enum:OP_TYPE
+WRITE	X:\springsnail\fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	enumerator	line:5	enum:OP_TYPE
+ERROR	X:\springsnail\fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	enumerator	line:5	enum:OP_TYPE
+LOG_H	X:\springsnail\log.h	/^#define LOG_H$/;"	macro	line:2
+CONN_H	X:\springsnail\conn.h	/^#define CONN_H$/;"	macro	line:2
+conn	X:\springsnail\conn.h	/^class conn$/;"	class	line:7
+BUF_SIZE	X:\springsnail\conn.h	/^    static const int BUF_SIZE = 2048;$/;"	member	line:21	class:conn
+m_clt_buf	X:\springsnail\conn.h	/^    char* m_clt_buf;$/;"	member	line:23	class:conn
+m_clt_read_idx	X:\springsnail\conn.h	/^    int m_clt_read_idx;$/;"	member	line:24	class:conn
+m_clt_write_idx	X:\springsnail\conn.h	/^    int m_clt_write_idx;$/;"	member	line:25	class:conn
+m_clt_address	X:\springsnail\conn.h	/^    sockaddr_in m_clt_address;$/;"	member	line:26	class:conn
+m_cltfd	X:\springsnail\conn.h	/^    int m_cltfd;$/;"	member	line:27	class:conn
+m_srv_buf	X:\springsnail\conn.h	/^    char* m_srv_buf;$/;"	member	line:29	class:conn
+m_srv_read_idx	X:\springsnail\conn.h	/^    int m_srv_read_idx;$/;"	member	line:30	class:conn
+m_srv_write_idx	X:\springsnail\conn.h	/^    int m_srv_write_idx;$/;"	member	line:31	class:conn
+m_srv_address	X:\springsnail\conn.h	/^    sockaddr_in m_srv_address;$/;"	member	line:32	class:conn
+m_srvfd	X:\springsnail\conn.h	/^    int m_srvfd;$/;"	member	line:33	class:conn
+m_srv_closed	X:\springsnail\conn.h	/^    bool m_srv_closed;$/;"	member	line:35	class:conn
+PROCESSPOOL_H	X:\springsnail\processpool.h	/^#define PROCESSPOOL_H$/;"	macro	line:2
+process	X:\springsnail\processpool.h	/^class process$/;"	class	line:25
+process	X:\springsnail\processpool.h	/^    process() : m_pid( -1 ){}$/;"	function	line:28	class:process	signature:()
+m_busy_ratio	X:\springsnail\processpool.h	/^    int m_busy_ratio;$/;"	member	line:31	class:process
+m_pid	X:\springsnail\processpool.h	/^    pid_t m_pid;$/;"	member	line:32	class:process
+m_pipefd	X:\springsnail\processpool.h	/^    int m_pipefd[2];$/;"	member	line:33	class:process
+processpool	X:\springsnail\processpool.h	/^class processpool$/;"	class	line:40
+create	X:\springsnail\processpool.h	/^    static processpool< C, H, M >* create( int listenfd, int process_number = 8 )$/;"	function	line:45	class:processpool	signature:( int listenfd, int process_number = 8 )
+~processpool	X:\springsnail\processpool.h	/^    ~processpool()$/;"	function	line:53	class:processpool	signature:()
+MAX_PROCESS_NUMBER	X:\springsnail\processpool.h	/^    static const int MAX_PROCESS_NUMBER = 16;	\/\/最大进程数$/;"	member	line:67	class:processpool
+USER_PER_PROCESS	X:\springsnail\processpool.h	/^    static const int USER_PER_PROCESS = 65536;	\/\/处理最大连接数$/;"	member	line:68	class:processpool
+MAX_EVENT_NUMBER	X:\springsnail\processpool.h	/^    static const int MAX_EVENT_NUMBER = 10000;	$/;"	member	line:69	class:processpool
+m_process_number	X:\springsnail\processpool.h	/^    int m_process_number;$/;"	member	line:70	class:processpool
+m_idx	X:\springsnail\processpool.h	/^    int m_idx;$/;"	member	line:71	class:processpool
+m_epollfd	X:\springsnail\processpool.h	/^    int m_epollfd;$/;"	member	line:72	class:processpool
+m_listenfd	X:\springsnail\processpool.h	/^    int m_listenfd;$/;"	member	line:73	class:processpool
+m_stop	X:\springsnail\processpool.h	/^    int m_stop;$/;"	member	line:74	class:processpool
+m_sub_process	X:\springsnail\processpool.h	/^    process* m_sub_process;$/;"	member	line:75	class:processpool
+m_instance	X:\springsnail\processpool.h	/^    static processpool< C, H, M >* m_instance;$/;"	member	line:76	class:processpool
+m_instance	X:\springsnail\processpool.h	/^processpool< C, H, M >* processpool< C, H, M >::m_instance = NULL;$/;"	member	line:80	class:processpool
+EPOLL_WAIT_TIME	X:\springsnail\processpool.h	/^static int EPOLL_WAIT_TIME = 5000;$/;"	variable	line:82
+sig_pipefd	X:\springsnail\processpool.h	/^static int sig_pipefd[2];$/;"	variable	line:83
+sig_handler	X:\springsnail\processpool.h	/^static void sig_handler( int sig )$/;"	function	line:84	signature:( int sig )
+addsig	X:\springsnail\processpool.h	/^static void addsig( int sig, void( handler )(int), bool restart = true )$/;"	function	line:92	signature:( int sig, void( handler )(int), bool restart = true )
+processpool	X:\springsnail\processpool.h	/^processpool< C, H, M >::processpool( int listenfd, int process_number ) $/;"	function	line:106	class:processpool	signature:( int listenfd, int process_number )
+get_most_free_srv	X:\springsnail\processpool.h	/^int processpool< C, H, M >::get_most_free_srv()$/;"	function	line:139	class:processpool	signature:()
+setup_sig_pipe	X:\springsnail\processpool.h	/^void processpool< C, H, M >::setup_sig_pipe()$/;"	function	line:155	class:processpool	signature:()
+run	X:\springsnail\processpool.h	/^void processpool< C, H, M >::run( const vector<H>& arg )$/;"	function	line:173	class:processpool	signature:( const vector<H>& arg )
+notify_parent_busy_ratio	X:\springsnail\processpool.h	/^void processpool< C, H, M >::notify_parent_busy_ratio( int pipefd, M* manager )$/;"	function	line:184	class:processpool	signature:( int pipefd, M* manager )
+run_child	X:\springsnail\processpool.h	/^void processpool< C, H, M >::run_child( const vector<H>& arg )$/;"	function	line:191	class:processpool	signature:( const vector<H>& arg )
+run_parent	X:\springsnail\processpool.h	/^void processpool< C, H, M >::run_parent()$/;"	function	line:332	class:processpool	signature:()

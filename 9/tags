@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	9-3etlt.cpp	16;"	d	file:
+BUFFER_SIZE	9-4oneshot.cpp	16;"	d	file:
+BUFFER_SIZE	9-5unblockconnect.cpp	15;"	d	file:
+BUFFER_SIZE	9-6mytalk-client.cpp	14;"	d	file:
+BUFFER_SIZE	9-7mytalk-server.cpp	16;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g  $/;"	m
+CPP	Makefile	/^CPP = g++ -std=c++11$/;"	m
+CPP_SRC	Makefile	/^CPP_SRC = $(wildcard *.cpp)$/;"	m
+CPP_TAR	Makefile	/^CPP_TAR = $(patsubst %.cpp, %, $(CPP_SRC))$/;"	m
+C_SRC	Makefile	/^C_SRC = $(wildcard *.c)$/;"	m
+C_TAR	Makefile	/^C_TAR = $(patsubst %.c, %, $(C_SRC))$/;"	m
+FD_LIMIT	9-7mytalk-server.cpp	17;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = -lpthread$/;"	m
+MAX_EVENT_NUMBER	9-3etlt.cpp	15;"	d	file:
+MAX_EVENT_NUMBER	9-4oneshot.cpp	15;"	d	file:
+RM	Makefile	/^RM = rm -f $/;"	m
+USER_LIMIT	9-7mytalk-server.cpp	15;"	d	file:
+_GNU_SOURCE	9-6mytalk-client.cpp	1;"	d	file:
+_GNU_SOURCE	9-7mytalk-server.cpp	1;"	d	file:
+addfd	9-3etlt.cpp	/^void addfd(int epollfd, int fd, bool enable_et)$/;"	f
+addfd	9-4oneshot.cpp	/^void addfd(int epollfd, int fd, bool oneshot)$/;"	f
+address	9-7mytalk-server.cpp	/^    sockaddr_in address;$/;"	m	struct:client_data	file:
+buf	9-7mytalk-server.cpp	/^    char buf[BUFFER_SIZE];$/;"	m	struct:client_data	file:
+client_data	9-7mytalk-server.cpp	/^struct client_data$/;"	s	file:
+epollfd	9-4oneshot.cpp	/^    int epollfd;$/;"	m	struct:fds	file:
+et	9-3etlt.cpp	/^void et(epoll_event *events, int number, int epollfd, int listenfd)$/;"	f
+fds	9-4oneshot.cpp	/^struct fds$/;"	s	file:
+lt	9-3etlt.cpp	/^void lt(epoll_event *events, int number, int epollfd, int listenfd)$/;"	f
+main	9-1use_select.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	9-3etlt.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	9-4oneshot.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	9-5unblockconnect.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	9-6mytalk-client.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	9-7mytalk-server.cpp	/^int main(int argc, char *argv[])$/;"	f
+reset_oneshot	9-4oneshot.cpp	/^void reset_oneshot(int epollfd, int fd)$/;"	f
+setnonblocking	9-3etlt.cpp	/^int setnonblocking(int fd)$/;"	f
+setnonblocking	9-4oneshot.cpp	/^int setnonblocking(int fd)$/;"	f
+setnonblocking	9-5unblockconnect.cpp	/^int setnonblocking(int fd)$/;"	f
+setnonblocking	9-7mytalk-server.cpp	/^int setnonblocking(int fd)$/;"	f
+sockfd	9-4oneshot.cpp	/^    int sockfd;$/;"	m	struct:fds	file:
+unblock_connect	9-5unblockconnect.cpp	/^int unblock_connect(const char *ip, int port, int time)$/;"	f
+worker	9-4oneshot.cpp	/^void *worker(void *arg)$/;"	f
+write_buf	9-7mytalk-server.cpp	/^    char *write_buf;$/;"	m	struct:client_data	file:

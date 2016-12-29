@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_EMPTY	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+BUFFER_FULL	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+BUF_SIZE	conn.h	/^    static const int BUF_SIZE = 2048;$/;"	m	class:conn
+CLOSED	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+CONN_H	conn.h	2;"	d
+EPOLL_WAIT_TIME	processpool.h	/^static int EPOLL_WAIT_TIME = 5000;$/;"	v
+ERROR	fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	e	enum:OP_TYPE
+FDWRAPPER_H	fdwrapper.cpp	2;"	d	file:
+FDWRAPPER_H	fdwrapper.h	2;"	d
+IOERR	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+LOG_BUFFER_SIZE	log.cpp	/^static int LOG_BUFFER_SIZE = 2048;$/;"	v	file:
+LOG_H	log.h	2;"	d
+MAX_EVENT_NUMBER	processpool.h	/^    static const int MAX_EVENT_NUMBER = 10000;	$/;"	m	class:processpool
+MAX_PROCESS_NUMBER	processpool.h	/^    static const int MAX_PROCESS_NUMBER = 16;	\/\/最大进程数$/;"	m	class:processpool
+NOTHING	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+OK	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+OP_TYPE	fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	g
+PROCESSPOOL_H	processpool.h	2;"	d
+READ	fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	e	enum:OP_TYPE
+RET_CODE	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	g
+SRVMGR_H	mgr.h	2;"	d
+TRY_AGAIN	fdwrapper.h	/^enum RET_CODE { OK = 0, NOTHING = 1, IOERR = -1, CLOSED = -2, BUFFER_FULL = -3, BUFFER_EMPTY = -4, TRY_AGAIN };$/;"	e	enum:RET_CODE
+USER_PER_PROCESS	processpool.h	/^    static const int USER_PER_PROCESS = 65536;	\/\/处理最大连接数$/;"	m	class:processpool
+WRITE	fdwrapper.h	/^enum OP_TYPE { READ = 0, WRITE, ERROR };$/;"	e	enum:OP_TYPE
+add_read_fd	fdwrapper.cpp	/^void add_read_fd( int epollfd, int fd )$/;"	f
+add_write_fd	fdwrapper.cpp	/^void add_write_fd( int epollfd, int fd )$/;"	f
+addsig	processpool.h	/^static void addsig( int sig, void( handler )(int), bool restart = true )$/;"	f
+closefd	fdwrapper.cpp	/^void closefd( int epollfd, int fd )$/;"	f
+conn	conn.cpp	/^conn::conn()$/;"	f	class:conn
+conn	conn.h	/^class conn$/;"	c
+conn2srv	mgr.cpp	/^int mgr::conn2srv( const sockaddr_in& address )$/;"	f	class:mgr
+create	processpool.h	/^    static processpool< C, H, M >* create( int listenfd, int process_number = 8 )$/;"	f	class:processpool
+free_conn	mgr.cpp	/^void mgr::free_conn( conn* connection )$/;"	f	class:mgr
+get_most_free_srv	processpool.h	/^int processpool< C, H, M >::get_most_free_srv()$/;"	f	class:processpool
+get_used_conn_cnt	mgr.cpp	/^int mgr::get_used_conn_cnt()$/;"	f	class:mgr
+host	mgr.h	/^class host$/;"	c
+init_clt	conn.cpp	/^void conn::init_clt( int sockfd, const sockaddr_in& client_addr )$/;"	f	class:conn
+init_srv	conn.cpp	/^void conn::init_srv( int sockfd, const sockaddr_in& server_addr )$/;"	f	class:conn
+level	log.cpp	/^static int level = LOG_INFO;$/;"	v	file:
+log	log.cpp	/^void log( int log_level,  const char* file_name, int line_num, const char* format, ... )$/;"	f
+loglevels	log.cpp	/^static const char* loglevels[] =$/;"	v	file:
+m_busy_ratio	processpool.h	/^    int m_busy_ratio;$/;"	m	class:process
+m_clt_address	conn.h	/^    sockaddr_in m_clt_address;$/;"	m	class:conn
+m_clt_buf	conn.h	/^    char* m_clt_buf;$/;"	m	class:conn
+m_clt_read_idx	conn.h	/^    int m_clt_read_idx;$/;"	m	class:conn
+m_clt_write_idx	conn.h	/^    int m_clt_write_idx;$/;"	m	class:conn
+m_cltfd	conn.h	/^    int m_cltfd;$/;"	m	class:conn
+m_conncnt	mgr.h	/^    int m_conncnt;$/;"	m	class:host
+m_conns	mgr.h	/^    map< int, conn* > m_conns;$/;"	m	class:mgr
+m_epollfd	mgr.cpp	/^int mgr::m_epollfd = -1;$/;"	m	class:mgr	file:
+m_epollfd	mgr.h	/^    static int m_epollfd;$/;"	m	class:mgr
+m_epollfd	processpool.h	/^    int m_epollfd;$/;"	m	class:processpool
+m_freed	mgr.h	/^    map< int, conn* > m_freed;$/;"	m	class:mgr
+m_hostname	mgr.h	/^    char m_hostname[1024];$/;"	m	class:host
+m_idx	processpool.h	/^    int m_idx;$/;"	m	class:processpool
+m_instance	processpool.h	/^    static processpool< C, H, M >* m_instance;$/;"	m	class:processpool
+m_instance	processpool.h	/^processpool< C, H, M >* processpool< C, H, M >::m_instance = NULL;$/;"	m	class:processpool
+m_listenfd	processpool.h	/^    int m_listenfd;$/;"	m	class:processpool
+m_logic_srv	mgr.h	/^    host m_logic_srv;$/;"	m	class:mgr
+m_pid	processpool.h	/^    pid_t m_pid;$/;"	m	class:process
+m_pipefd	processpool.h	/^    int m_pipefd[2];$/;"	m	class:process
+m_port	mgr.h	/^    int m_port;$/;"	m	class:host
+m_process_number	processpool.h	/^    int m_process_number;$/;"	m	class:processpool
+m_srv_address	conn.h	/^    sockaddr_in m_srv_address;$/;"	m	class:conn
+m_srv_buf	conn.h	/^    char* m_srv_buf;$/;"	m	class:conn
+m_srv_closed	conn.h	/^    bool m_srv_closed;$/;"	m	class:conn
+m_srv_read_idx	conn.h	/^    int m_srv_read_idx;$/;"	m	class:conn
+m_srv_write_idx	conn.h	/^    int m_srv_write_idx;$/;"	m	class:conn
+m_srvfd	conn.h	/^    int m_srvfd;$/;"	m	class:conn
+m_stop	processpool.h	/^    int m_stop;$/;"	m	class:processpool
+m_sub_process	processpool.h	/^    process* m_sub_process;$/;"	m	class:processpool
+m_used	mgr.h	/^    map< int, conn* > m_used;$/;"	m	class:mgr
+main	main.cpp	/^int main( int argc, char* argv[] )$/;"	f
+mgr	mgr.cpp	/^mgr::mgr( int epollfd, const host& srv ) : m_logic_srv( srv )$/;"	f	class:mgr
+mgr	mgr.h	/^class mgr$/;"	c
+modfd	fdwrapper.cpp	/^void modfd( int epollfd, int fd, int ev )$/;"	f
+notify_parent_busy_ratio	processpool.h	/^void processpool< C, H, M >::notify_parent_busy_ratio( int pipefd, M* manager )$/;"	f	class:processpool
+pick_conn	mgr.cpp	/^conn* mgr::pick_conn( int cltfd  )$/;"	f	class:mgr
+process	mgr.cpp	/^RET_CODE mgr::process( int fd, OP_TYPE type )$/;"	f	class:mgr
+process	processpool.h	/^    process() : m_pid( -1 ){}$/;"	f	class:process
+process	processpool.h	/^class process$/;"	c
+processpool	processpool.h	/^class processpool$/;"	c
+processpool	processpool.h	/^processpool< C, H, M >::processpool( int listenfd, int process_number ) $/;"	f	class:processpool
+read_clt	conn.cpp	/^RET_CODE conn::read_clt()$/;"	f	class:conn
+read_srv	conn.cpp	/^RET_CODE conn::read_srv()$/;"	f	class:conn
+recycle_conns	mgr.cpp	/^void mgr::recycle_conns()$/;"	f	class:mgr
+removefd	fdwrapper.cpp	/^void removefd( int epollfd, int fd )$/;"	f
+reset	conn.cpp	/^void conn::reset()$/;"	f	class:conn
+run	processpool.h	/^void processpool< C, H, M >::run( const vector<H>& arg )$/;"	f	class:processpool
+run_child	processpool.h	/^void processpool< C, H, M >::run_child( const vector<H>& arg )$/;"	f	class:processpool
+run_parent	processpool.h	/^void processpool< C, H, M >::run_parent()$/;"	f	class:processpool
+set_loglevel	log.cpp	/^void set_loglevel( int log_level )$/;"	f
+setnonblocking	fdwrapper.cpp	/^int setnonblocking( int fd )$/;"	f
+setup_sig_pipe	processpool.h	/^void processpool< C, H, M >::setup_sig_pipe()$/;"	f	class:processpool
+sig_handler	processpool.h	/^static void sig_handler( int sig )$/;"	f
+sig_pipefd	processpool.h	/^static int sig_pipefd[2];$/;"	v
+usage	main.cpp	/^static void usage( const char* prog )$/;"	f	file:
+version	main.cpp	/^static const char* version = "1.0";$/;"	v	file:
+write_clt	conn.cpp	/^RET_CODE conn::write_clt()$/;"	f	class:conn
+write_srv	conn.cpp	/^RET_CODE conn::write_srv()$/;"	f	class:conn
+~conn	conn.cpp	/^conn::~conn()$/;"	f	class:conn
+~mgr	mgr.cpp	/^mgr::~mgr()$/;"	f	class:mgr
+~processpool	processpool.h	/^    ~processpool()$/;"	f	class:processpool

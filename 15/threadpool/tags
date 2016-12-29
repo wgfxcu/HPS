@@ -1,0 +1,140 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BAD_REQUEST	http_conn.h	/^	enum HTTP_CODE {NO_REQUEST, GET_REQUEST, BAD_REQUEST,$/;"	e	enum:http_conn::HTTP_CODE
+CHECK_STATE	http_conn.h	/^    enum CHECK_STATE {CHECK_STATE_REQUESTLINE = 0, CHECK_STATE_HEADER, CHECK_STATE_CONTENT};$/;"	g	class:http_conn
+CHECK_STATE_CONTENT	http_conn.h	/^    enum CHECK_STATE {CHECK_STATE_REQUESTLINE = 0, CHECK_STATE_HEADER, CHECK_STATE_CONTENT};$/;"	e	enum:http_conn::CHECK_STATE
+CHECK_STATE_HEADER	http_conn.h	/^    enum CHECK_STATE {CHECK_STATE_REQUESTLINE = 0, CHECK_STATE_HEADER, CHECK_STATE_CONTENT};$/;"	e	enum:http_conn::CHECK_STATE
+CHECK_STATE_REQUESTLINE	http_conn.h	/^    enum CHECK_STATE {CHECK_STATE_REQUESTLINE = 0, CHECK_STATE_HEADER, CHECK_STATE_CONTENT};$/;"	e	enum:http_conn::CHECK_STATE
+CLOSED_CONNECTION	http_conn.h	/^					INTERNAL_ERROR, CLOSED_CONNECTION};$/;"	e	enum:http_conn::HTTP_CODE
+CONNECT	http_conn.h	/^                TRACE, OPTIONS, CONNECT, PATCH};$/;"	e	enum:http_conn::METHOD
+DELETE	http_conn.h	/^    enum METHOD {GET = 0, POST, HEAD, PUT, DELETE,$/;"	e	enum:http_conn::METHOD
+FILENAME_LEN	http_conn.h	/^    static const int FILENAME_LEN = 200;$/;"	m	class:http_conn
+FILE_REQUEST	http_conn.h	/^					NO_RESOURCE, FORBIDDEN_REQUEST, FILE_REQUEST,$/;"	e	enum:http_conn::HTTP_CODE
+FORBIDDEN_REQUEST	http_conn.h	/^					NO_RESOURCE, FORBIDDEN_REQUEST, FILE_REQUEST,$/;"	e	enum:http_conn::HTTP_CODE
+GET	http_conn.h	/^    enum METHOD {GET = 0, POST, HEAD, PUT, DELETE,$/;"	e	enum:http_conn::METHOD
+GET_REQUEST	http_conn.h	/^	enum HTTP_CODE {NO_REQUEST, GET_REQUEST, BAD_REQUEST,$/;"	e	enum:http_conn::HTTP_CODE
+HEAD	http_conn.h	/^    enum METHOD {GET = 0, POST, HEAD, PUT, DELETE,$/;"	e	enum:http_conn::METHOD
+HTTP_CODE	http_conn.h	/^	enum HTTP_CODE {NO_REQUEST, GET_REQUEST, BAD_REQUEST,$/;"	g	class:http_conn
+INTERNAL_ERROR	http_conn.h	/^					INTERNAL_ERROR, CLOSED_CONNECTION};$/;"	e	enum:http_conn::HTTP_CODE
+LINE_BAD	http_conn.h	/^	enum LINE_STATUS {LINE_OK = 0, LINE_BAD, LINE_OPEN};$/;"	e	enum:http_conn::LINE_STATUS
+LINE_OK	http_conn.h	/^	enum LINE_STATUS {LINE_OK = 0, LINE_BAD, LINE_OPEN};$/;"	e	enum:http_conn::LINE_STATUS
+LINE_OPEN	http_conn.h	/^	enum LINE_STATUS {LINE_OK = 0, LINE_BAD, LINE_OPEN};$/;"	e	enum:http_conn::LINE_STATUS
+LINE_STATUS	http_conn.h	/^	enum LINE_STATUS {LINE_OK = 0, LINE_BAD, LINE_OPEN};$/;"	g	class:http_conn
+MAX_EVENT_NUMBER	main.cpp	18;"	d	file:
+MAX_FD	main.cpp	17;"	d	file:
+METHOD	http_conn.h	/^    enum METHOD {GET = 0, POST, HEAD, PUT, DELETE,$/;"	g	class:http_conn
+NO_REQUEST	http_conn.h	/^	enum HTTP_CODE {NO_REQUEST, GET_REQUEST, BAD_REQUEST,$/;"	e	enum:http_conn::HTTP_CODE
+NO_RESOURCE	http_conn.h	/^					NO_RESOURCE, FORBIDDEN_REQUEST, FILE_REQUEST,$/;"	e	enum:http_conn::HTTP_CODE
+OPTIONS	http_conn.h	/^                TRACE, OPTIONS, CONNECT, PATCH};$/;"	e	enum:http_conn::METHOD
+PATCH	http_conn.h	/^                TRACE, OPTIONS, CONNECT, PATCH};$/;"	e	enum:http_conn::METHOD
+POST	http_conn.h	/^    enum METHOD {GET = 0, POST, HEAD, PUT, DELETE,$/;"	e	enum:http_conn::METHOD
+PUT	http_conn.h	/^    enum METHOD {GET = 0, POST, HEAD, PUT, DELETE,$/;"	e	enum:http_conn::METHOD
+READ_BUFFER_SIZE	http_conn.h	/^    static const int READ_BUFFER_SIZE = 2048;$/;"	m	class:http_conn
+TRACE	http_conn.h	/^                TRACE, OPTIONS, CONNECT, PATCH};$/;"	e	enum:http_conn::METHOD
+WRITE_BUFFER_SIZE	http_conn.h	/^    static const int WRITE_BUFFER_SIZE = 1024;$/;"	m	class:http_conn
+__HTTP_CONN_H	http_conn.h	2;"	d
+__LOCKER_H	locker.h	2;"	d
+__THREAD_POOL_H	threadpool.h	2;"	d
+add_blank_line	http-conn.cpp	/^bool http_conn::add_blank_line()$/;"	f	class:http_conn
+add_content	http-conn.cpp	/^bool http_conn::add_content(const char *content)$/;"	f	class:http_conn
+add_content_length	http-conn.cpp	/^bool http_conn::add_content_length(int content_len)$/;"	f	class:http_conn
+add_headers	http-conn.cpp	/^bool http_conn::add_headers(int content_len)$/;"	f	class:http_conn
+add_linger	http-conn.cpp	/^bool http_conn::add_linger()$/;"	f	class:http_conn
+add_response	http-conn.cpp	/^bool http_conn::add_response(const char *format, ...)$/;"	f	class:http_conn
+add_status_line	http-conn.cpp	/^bool http_conn::add_status_line(int status, const char *title)$/;"	f	class:http_conn
+addfd	http-conn.cpp	/^void addfd(int epollfd, int fd, bool one_shot)$/;"	f
+addsig	main.cpp	/^void addsig(int sig, void ( handler ) (int), bool restart = true)$/;"	f
+append	threadpool.h	/^bool threadpool<T>::append(T *request)$/;"	f	class:threadpool
+close_conn	http-conn.cpp	/^void http_conn::close_conn(bool real_close)$/;"	f	class:http_conn
+cond	locker.h	/^    cond()$/;"	f	class:cond
+cond	locker.h	/^class cond$/;"	c
+do_request	http-conn.cpp	/^http_conn::HTTP_CODE http_conn::do_request()$/;"	f	class:http_conn
+doc_root	http-conn.cpp	/^const char *doc_root = "\/var\/www\/html";$/;"	v
+error_400_form	http-conn.cpp	/^const char *error_400_form = "Your request has bad syntax or is inherently impossible to satisfy.\\n";$/;"	v
+error_400_title	http-conn.cpp	/^const char *error_400_title = "Bad Request";$/;"	v
+error_403_form	http-conn.cpp	/^const char *error_403_form = "You do not have permission to get file from this server.\\n";$/;"	v
+error_403_title	http-conn.cpp	/^const char *error_403_title = "Forbidden";$/;"	v
+error_404_form	http-conn.cpp	/^const char *error_404_form = "The requested file was not found on this server.\\n";$/;"	v
+error_404_title	http-conn.cpp	/^const char *error_404_title = "Not Found";$/;"	v
+error_500_form	http-conn.cpp	/^const char *error_500_form = "There was an unusual problem serving the requested file.\\n";$/;"	v
+error_500_title	http-conn.cpp	/^const char *error_500_title = "Internal Error";$/;"	v
+get_line	http_conn.h	/^	char *get_line() { return m_read_buf + m_start_line; }$/;"	f	class:http_conn
+http_conn	http_conn.h	/^class http_conn$/;"	c
+init	http-conn.cpp	/^void http_conn::init()$/;"	f	class:http_conn
+init	http-conn.cpp	/^void http_conn::init(int sockfd, const sockaddr_in &addr)$/;"	f	class:http_conn
+lock	locker.h	/^    bool lock()$/;"	f	class:locker
+locker	locker.h	/^    locker()$/;"	f	class:locker
+locker	locker.h	/^class locker$/;"	c
+m_address	http_conn.h	/^	sockaddr_in m_address;$/;"	m	class:http_conn
+m_checked_idx	http_conn.h	/^	int m_checked_idx;$/;"	m	class:http_conn
+m_checked_state	http_conn.h	/^	CHECK_STATE m_checked_state;$/;"	m	class:http_conn
+m_cond	locker.h	/^    pthread_cond_t m_cond;$/;"	m	class:cond
+m_content_length	http_conn.h	/^	int m_content_length;$/;"	m	class:http_conn
+m_epollfd	http-conn.cpp	/^int http_conn::m_epollfd = -1;$/;"	m	class:http_conn	file:
+m_epollfd	http_conn.h	/^	 static int m_epollfd;$/;"	m	class:http_conn
+m_file_address	http_conn.h	/^	char *m_file_address;$/;"	m	class:http_conn
+m_file_stat	http_conn.h	/^	 struct stat m_file_stat;$/;"	m	class:http_conn	typeref:struct:http_conn::stat
+m_host	http_conn.h	/^	char *m_host;$/;"	m	class:http_conn
+m_iv	http_conn.h	/^	  struct iovec m_iv[2];$/;"	m	class:http_conn	typeref:struct:http_conn::iovec
+m_iv_count	http_conn.h	/^	  int m_iv_count;$/;"	m	class:http_conn
+m_linger	http_conn.h	/^	bool m_linger;$/;"	m	class:http_conn
+m_max_requests	threadpool.h	/^    int m_max_requests;     \/* 请求队列中允许的最大请求数 *\/$/;"	m	class:threadpool
+m_method	http_conn.h	/^	METHOD m_method;$/;"	m	class:http_conn
+m_mutex	locker.h	/^    pthread_mutex_t m_mutex;$/;"	m	class:cond
+m_mutex	locker.h	/^    pthread_mutex_t m_mutex;$/;"	m	class:locker
+m_queuelocker	threadpool.h	/^    locker m_queuelocker;   \/* 保护请求队列的互斥锁 *\/$/;"	m	class:threadpool
+m_queuestat	threadpool.h	/^    sem m_queuestat;    \/* 是否有任务需要处理 *\/$/;"	m	class:threadpool
+m_read_buf	http_conn.h	/^	char m_read_buf[READ_BUFFER_SIZE];$/;"	m	class:http_conn
+m_read_idx	http_conn.h	/^	int m_read_idx;$/;"	m	class:http_conn
+m_real_file	http_conn.h	/^	char *m_real_file[FILENAME_LEN];$/;"	m	class:http_conn
+m_sem	locker.h	/^    sem_t m_sem;$/;"	m	class:sem
+m_sockfd	http_conn.h	/^	int m_sockfd;$/;"	m	class:http_conn
+m_start_line	http_conn.h	/^	int m_start_line;$/;"	m	class:http_conn
+m_stop	threadpool.h	/^    bool m_stop;        \/* 是否结束线程 *\/$/;"	m	class:threadpool
+m_thread_number	threadpool.h	/^    int m_thread_number;    \/* 线程池中的线程数 *\/$/;"	m	class:threadpool
+m_threads	threadpool.h	/^    pthread_t *m_threads;   \/* 描述线程池的数组，其大小为m_thread_number *\/$/;"	m	class:threadpool
+m_url	http_conn.h	/^	char *m_url;$/;"	m	class:http_conn
+m_user_count	http-conn.cpp	/^int http_conn::m_user_count = 0;$/;"	m	class:http_conn	file:
+m_user_count	http_conn.h	/^	 static int m_user_count;$/;"	m	class:http_conn
+m_version	http_conn.h	/^	char *m_version;$/;"	m	class:http_conn
+m_workqueue	threadpool.h	/^    std::list<T *> m_workqueue;     \/* 请求队列 *\/$/;"	m	class:threadpool
+m_write_buf	http_conn.h	/^	char m_write_buf[WRITE_BUFFER_SIZE];$/;"	m	class:http_conn
+m_write_idx	http_conn.h	/^	int m_write_idx;$/;"	m	class:http_conn
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+modfd	http-conn.cpp	/^void modfd(int epollfd, int fd, int ev)$/;"	f
+ok_200_title	http-conn.cpp	/^const char *ok_200_title = "OK";$/;"	v
+parse_content	http-conn.cpp	/^http_conn::HTTP_CODE http_conn::parse_content(char *text)$/;"	f	class:http_conn
+parse_headers	http-conn.cpp	/^http_conn::HTTP_CODE http_conn::parse_headers(char *text)$/;"	f	class:http_conn
+parse_line	http-conn.cpp	/^http_conn::LINE_STATUS http_conn::parse_line()$/;"	f	class:http_conn
+parse_request_line	http-conn.cpp	/^http_conn::HTTP_CODE http_conn::parse_request_line(char *text)$/;"	f	class:http_conn
+post	locker.h	/^    bool post()$/;"	f	class:sem
+process	http-conn.cpp	/^void http_conn::process()$/;"	f	class:http_conn
+process_read	http-conn.cpp	/^http_conn::HTTP_CODE http_conn::process_read()$/;"	f	class:http_conn
+process_write	http-conn.cpp	/^bool http_conn::process_write(HTTP_CODE ret)$/;"	f	class:http_conn
+read	http-conn.cpp	/^bool http_conn::read()$/;"	f	class:http_conn
+removefd	http-conn.cpp	/^void removefd(int epollfd, int fd)$/;"	f
+run	threadpool.h	/^void threadpool<T>::run()$/;"	f	class:threadpool
+sem	locker.h	/^    sem()$/;"	f	class:sem
+sem	locker.h	/^class sem$/;"	c
+setnonblocking	http-conn.cpp	/^int setnonblocking(int fd)$/;"	f
+show_error	main.cpp	/^void show_error(int connfd, const char *info)$/;"	f
+signal	locker.h	/^    bool signal()$/;"	f	class:cond
+threadpool	threadpool.h	/^class threadpool$/;"	c
+threadpool	threadpool.h	/^threadpool<T>::threadpool(int thread_number, int max_requests): m_thread_number(thread_number),$/;"	f	class:threadpool
+unlock	locker.h	/^    bool unlock()$/;"	f	class:locker
+unmap	http-conn.cpp	/^void http_conn::unmap()$/;"	f	class:http_conn
+wait	locker.h	/^    bool wait()$/;"	f	class:cond
+wait	locker.h	/^    bool wait()$/;"	f	class:sem
+worker	threadpool.h	/^void *threadpool<T>::worker(void *arg)$/;"	f	class:threadpool
+write	http-conn.cpp	/^bool http_conn::write()$/;"	f	class:http_conn
+x20Helper	._http-conn.cpp	/^/;"	v
+x20Helper	._http_conn.h	/^/;"	v
+x20Helper	._threadpool.h	/^/;"	v
+~cond	locker.h	/^    ~cond()$/;"	f	class:cond
+~locker	locker.h	/^    ~locker()$/;"	f	class:locker
+~sem	locker.h	/^    ~sem()$/;"	f	class:sem
+~threadpool	threadpool.h	/^threadpool<T>::~threadpool()$/;"	f	class:threadpool

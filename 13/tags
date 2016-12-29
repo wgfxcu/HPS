@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	13-4shm_talk_server.cpp	19;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g  $/;"	m
+CPP	Makefile	/^CPP = g++ -std=c++11$/;"	m
+CPP_SRC	Makefile	/^CPP_SRC = $(wildcard *.cpp)$/;"	m
+CPP_TAR	Makefile	/^CPP_TAR = $(patsubst %.cpp, %, $(CPP_SRC))$/;"	m
+C_SRC	Makefile	/^C_SRC = $(wildcard *.c)$/;"	m
+C_TAR	Makefile	/^C_TAR = $(patsubst %.c, %, $(C_SRC))$/;"	m
+FD_LIMIT	13-4shm_talk_server.cpp	20;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = -lpthread -lrt$/;"	m
+MAX_EVENT_NUMBER	13-4shm_talk_server.cpp	21;"	d	file:
+PROCESS_LIMIT	13-4shm_talk_server.cpp	22;"	d	file:
+RM	Makefile	/^RM = rm -f $/;"	m
+USER_LIMIT	13-4shm_talk_server.cpp	18;"	d	file:
+__buf	13-3sem.cpp	/^    struct seminfo *__buf;$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+addfd	13-4shm_talk_server.cpp	/^void addfd(int epollfd, int fd)$/;"	f
+address	13-4shm_talk_server.cpp	/^    sockaddr_in address;    \/* 客户端的socket地址 *\/$/;"	m	struct:client_data	file:
+addsig	13-4shm_talk_server.cpp	/^void addsig(int sig, void (*handler)(int), bool restart = true)$/;"	f
+array	13-3sem.cpp	/^    unsigned short int *array;$/;"	m	union:semun	file:
+buf	13-3sem.cpp	/^    struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+child_term_handler	13-4shm_talk_server.cpp	/^void child_term_handler(int sig)$/;"	f
+client_data	13-4shm_talk_server.cpp	/^struct client_data$/;"	s	file:
+connfd	13-4shm_talk_server.cpp	/^    int connfd;             \/* socket文件描述符 *\/$/;"	m	struct:client_data	file:
+del_resource	13-4shm_talk_server.cpp	/^void del_resource()$/;"	f
+epollfd	13-4shm_talk_server.cpp	/^int epollfd;$/;"	v
+listenfd	13-4shm_talk_server.cpp	/^int listenfd;$/;"	v
+main	13-3sem.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	13-4shm_talk_server.cpp	/^int main(int argc, char *argv[])$/;"	f
+pid	13-4shm_talk_server.cpp	/^    pid_t pid;              \/* 处理这个连接的子进程的PID *\/$/;"	m	struct:client_data	file:
+pipefd	13-4shm_talk_server.cpp	/^    int pipefd[2];          \/* 和父进程通信用的管道 *\/$/;"	m	struct:client_data	file:
+pv	13-3sem.cpp	/^void pv(int sem_id, int op)$/;"	f
+run_child	13-4shm_talk_server.cpp	/^int run_child(int idx, client_data *users, char *share_mem)$/;"	f
+semun	13-3sem.cpp	/^union semun$/;"	u	file:
+setnonblocking	13-4shm_talk_server.cpp	/^int setnonblocking(int fd)$/;"	f
+share_mem	13-4shm_talk_server.cpp	/^char * share_mem = 0;$/;"	v
+shm_name	13-4shm_talk_server.cpp	/^static const char *shm_name = "\/my_shm";$/;"	v	file:
+shmfd	13-4shm_talk_server.cpp	/^int shmfd;$/;"	v
+sig_handler	13-4shm_talk_server.cpp	/^void sig_handler(int sig)$/;"	f
+sig_pipefd	13-4shm_talk_server.cpp	/^int sig_pipefd[2];$/;"	v
+stop_child	13-4shm_talk_server.cpp	/^bool stop_child = false;$/;"	v
+sub_process	13-4shm_talk_server.cpp	/^int *sub_process = 0;$/;"	v
+user_count	13-4shm_talk_server.cpp	/^int user_count = 0;$/;"	v
+users	13-4shm_talk_server.cpp	/^client_data *users = 0;$/;"	v
+val	13-3sem.cpp	/^    int val;$/;"	m	union:semun	file:
